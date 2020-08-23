@@ -1,2 +1,174 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<main id="home-page">
+  <header class="headband" id="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light float-right">
+      <h2 class="navbar-brand name white-text"><span class="lastname">Yohann</span><span class="firstname">BERNARD</span></h2>
+      <div class="right">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <button class="nav-link my-btn btn-active", id="nav-home"> Accueil </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link my-btn", id="nav-about"> A propos </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link my-btn", id="nav-realisation"> Réalisations </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link my-btn", id="nav-contact"> Contact </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="liseret">
+  </div>
+  <div class="encard" id="home">
+    <div class="my-center">
+      <h1 class="white-text marge-5"><span class="lastname">WEB </span><span class="firstname"> Développeur</span></h1>
+      <p class="white-text marge-1"><b>Design</b>: Figma</p>
+      <p class="white-text marge-2"><b>Front-end</b>: Html Css Javascript</p>
+      <p class="white-text marge-3"><b>Back-end</b>: Ruby on rails</p>
+      <p class="white-text marge-4"><b>Database</b>: PostgreSQL</p>
+    </div>
+    <h3 class="marge-section section-1">Accueil</h3>
+  </div>
+  <div class="encard" id="about">
+    <div class="display-box">
+      <div class="col1">
+        <div class="vertical-line">
+          <div class="selfie">
+          </div>
+        </div>
+        <ul class="social">
+          <li><%= link_to 'https://www.facebook.com/profile.php?id=100008553408660' do %>
+              <i class="fab fa-facebook"></i>
+            <% end %>
+          </li>
+          <li><%= link_to 'https://codepen.io/dashboard/' do %>
+              <i class="fab fa-codepen"></i>
+            <% end %>
+          </li>
+          <li><%= link_to 'https://github.com/yohannBernard411' do %>
+              <i class="fab fa-github"></i>
+            <% end %>
+          </li>
+          <li><%= link_to 'https://twitter.com/Yohann83654858' do %>
+              <i class="fab fa-twitter"></i>
+            <% end %>
+          </li>
+          <li><%= link_to 'https://www.linkedin.com/in/yohber/' do %>
+              <i class="fab fa-linkedin-in"></i>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+      <div class="col2">
+        <div class="para1">
+          <p>Yohann BERNARD</p>
+          <p>39 ans</p>
+          <p>WEB Développeur full-stack</p>
+        </div>
+        <div class="para2">
+          <p>Aprés 15 ans dans le domaine de l'aéronautique, et une reconversion (pour raison de santé).</p>
+          <p>Je suis développeur web full-stack avec une attirance particuliére pour l'algorithmie.</p>
+        </div>
+        <div class="para3">
+          <p>Après 15 ans dans le domaine de l'Aéronautique, domaine passionnant mais dans lequel je ne peux malheureusement plus travailler pour raison de santé (RQTH : cheville gauche). Je me ré-oriente vers le développement Web, métier qui m'attire beaucoup car c'est un secteur motivant ou il faut continuellement apprendre et évoluer, et comme l'Aéronautique, c'est un secteur qui demande de la rigueur et de l'organisation, de plus je codais déjà pour mes loisirs perso avant (<%= link_to "jeux en 2D", "https://mariowebapp.herokuapp.com/" %>, Arduino, Raspberry-pi...).</p>
+          <p>Pour accomplir cette reconversion, j'ai commencé par le FREE CODE CAMP pour découvrir les bases (HTML, CSS, JavaScript), puis j'ai effectué la formation <%= link_to "Développeur web fullstack", "https://zupimages.net/up/20/34/mw80.jpg" %> du WAGON Bordeaux durant 9 semaines intensives, formation financée par TRANSITION PRO, où j'ai appris:</p>
+          <ul class="my-list">
+            <li>Ruby: Flow, Regexp, Parsing, Storing</li>
+            <li>Programmation orienté objets: Classes, Instances, Héritages</li>
+            <li>Base de données SQL: CRUD, Active Record, Associations,  Validations</li>
+            <li>Front: HTML, CSS, Bootstrap, Grid & Flex, JavaScript, Ajax, plugins</li>
+            <li>Rails: M-V-C, Routing</li>
+            <li>Gemmes & services: Cloudinary, Devise, Omniauth, Pundit, Geocoding</li>
+            <li>Réalisation d'un projet en équipe (3 pers/2semaines)</li>
+          </ul>
+          <p>J'ai personnellement complété cette formation avec quelques cours UDEMY, tel que:</p>
+          <ul class="my-list">
+            <li>Vraiment bien comprendre JavaScript</li>
+            <li>Gestion de projet Agile, la méthode SCRUM</li>
+            <li>Testing Ruby with RSpec: The complete guide</li>
+          </ul>
+          <p>Car il s'agit de compétences qu'il me semblait indispensable d'approfondir.</p>
+          <p>Afin de mettre ces nouvelles compétences en pratique, j'ai réalisé un site pour une cliente (<%= link_to "OceNatCréations.com", "http://www.ocenatcreations.com" %>). Site très intéressant puisqu'il concerne des valeurs auxquelles je suis attaché (artisanat, respect de l'environnement). La réalisation de ce site m'a permit d'avoir une vision plus précise de ce qu'un client attend d'un développeur WEB, il m'a permit de me confronter aux différentes difficultés techniques (authentification clients, envoie d’e-mails, traductions, gestion des commandes...).</p>
+          <p>Pour pouvoir continuer à apprendre tout en réalisant des projets de plus grande envergure au sein d’une équipe qui partagerait les mêmes valeurs que moi (l’entraide, le respect, l’envie de réaliser des choses ayant un réel impact), je recherche maintenant une entreprise.</p>
+        </div>
+        <button class="my-btn cta", id="see-more">En savoir plus</button>
+      </div>
+    </div>
+    <h3 class="marge-section section-2">A propos</h3>
+  </div>
+  <div class="encard" id="realisations">
+    <div class="three-xp">
+      <div class="xp" id="documentation">
+        <div class="gradient">
+          <h3>Documentation</h3>
+          <p class="my-justify">Ce site est une de mes premières réalisations, son design et ses fonctionnalités ne sont pas dingues (Il s’agit surtout de mise en forme de documentation, accès sur l’animation CSS et le responsive), mais je l’ai tout de même sélectionné car pour moi il représente le moment où j’ai compris que grâce au code, on peut réaliser tout ce que l’on imagine !</p>
+          <%= link_to "www.harduino.club", "harduino.club", class: "cta site" %>
+        </div>
+      </div>
+      <div class="xp" id="upya">
+        <div class="gradient">
+          <h3>Upya</h3>
+          <p class="my-justify">Upya a pour mission de vous aider à réaliser votre projet de reconversion professionnel en vous proposant une méthodologie efficiente pour concrétiser votre avenir. Il s'agit de notre <%= link_to "présentation", "https://www.youtube.com/watch?v=sVfwTZ-naUM&list=PLkbmdtbypn7TnD6YI7KOAsao0Bhaer5fU&index=6&t=0s" %> de fin de formation (Le Wagon Bordeaux), ce projet à été réalisé en deux semaines par notre équipe: Joseph, Lilian et moi-même. Il nous à permi de comprendre l'importance de travailler en équipe car nous étions trés complémentaire.</p>
+          <%= link_to "www.upya.consulting", "http://www.upya.consulting/", class: "cta site" %>
+        </div>
+      </div>
+      <div class="xp" id="ocenatcreations">
+        <div class="gradient">
+          <h3>OceNatCreations</h3>
+          <p class="my-justify">Premier client en tant que Freelance, j'ai adoré créer ce site, concrétiser les souhaits du client, apporter une dimension international à cette petite entreprise naissante. Régler les différentes contraintes techniques qui se présentées. Et même apporter ma contribution au souhait d’écologie du client pour son entreprise, en lui proposant de regrouper les impressions étiquettes de colis afin de diminuer le nombre de feuilles utilisées.</p>
+          <%= link_to "www.ocentcreations.com", "http://www.ocentcreations.com", class: "cta site" %>
+        </div>
+      </div>
+    </div>
+    <h3 class="marge-section section-3">Réalisations</h3>
+  </div>
+  <div class="encard" id="contact">
+    <div class="colA">
+      <div class="me">Yohann BERNARD</div>
+      <div class="my-mail"><i class="fas fa-at"></i> yohannb215@gmail.com</div>
+      <div class="tel"><i class="fas fa-mobile-alt"></i> 06.21.89.12.21</div>
+    </div>
+    <div class="colB">
+      <%= simple_form_for @message do |f| %>
+        <%= f.input :email, label: false, placeholder: "Email" %>
+        <%= f.input :title, label: false, placeholder: "Titre", class: "input-f" %>
+        <%= f.input :content, label: false, placeholder: "Message", class: "input-f content" %>
+        <%= f.submit "Envoyer", class: "cta send" %>
+      <% end %>
+    </div>
+  </div>
+  <h3 class="marge-section section-4">Contact</h3>
+  <footer class="headband" id="footer">
+    <p class="my-left">Yohann BERNARD, Aout 2020</p>
+    <ul class="social my-right">
+      <li><%= link_to 'https://www.facebook.com/profile.php?id=100008553408660' do %>
+          <i class="fab fa-facebook"></i>
+        <% end %>
+      </li>
+      <li><%= link_to 'https://codepen.io/dashboard/' do %>
+          <i class="fab fa-codepen"></i>
+        <% end %>
+      </li>
+      <li><%= link_to 'https://github.com/yohannBernard411' do %>
+          <i class="fab fa-github"></i>
+        <% end %>
+      </li>
+      <li><%= link_to 'https://twitter.com/Yohann83654858' do %>
+          <i class="fab fa-twitter"></i>
+        <% end %>
+      </li>
+      <li><%= link_to 'https://www.linkedin.com/in/yohber/' do %>
+          <i class="fab fa-linkedin-in"></i>
+        <% end %>
+      </li>
+    </ul>
+  </footer>
+</main>

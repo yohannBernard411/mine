@@ -4,7 +4,7 @@
     <title>Mine</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -12,6 +12,18 @@
   </head>
 
   <body>
+    <% if notice %>
+      <div class="alert alert-info alert-dismissible my-notice-style" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= notice %>
+      </div>
+    <% end %>
+    <% if alert %>
+      <div class="alert alert-warning alert-dismissible my-alert-style" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <%= alert %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
