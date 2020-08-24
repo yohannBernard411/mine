@@ -99,9 +99,12 @@
 #home h1{
   font-size: 56px;
 }
+.my-btn{
+  z-index: 5;
+}
 .my-center{
-  transform: translateX(calc( 50vw - 80px )) translateY(calc( 50vh - 200px ));
-  z-index: 1;
+  margin-left: calc( 50vw - 80px );
+  margin-top: calc( 50vh - 200px );
   font-family: 'Architects Daughter', cursive;
   width: 50%;
 }
@@ -426,6 +429,12 @@
   .name{
     margin-left: 5px;
     font-size: 24px;
+  }
+  .marge-1, .marge-2, .marge-3, .marge-4{
+    width: 90%;
+  }
+  .my-center{
+    width: 70%;
   }
   .right{
     text-align: right;
