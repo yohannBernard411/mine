@@ -258,6 +258,7 @@
 }
 #see-more{
   margin-top: 40px;
+  z-index: 3;
 }
 .section-2{
   top: calc( 140vh - 200px );
@@ -334,7 +335,7 @@
   background-image: url("https://zupimages.net/up/20/34/o57c.png");
 }
 .section-3{
-  top: calc( 220vh - 200px );
+  top: calc( 220vh - 160px );
 }
 .site{
   width: 200px;
@@ -397,6 +398,8 @@
 }
 .section-4{
   top: calc( 320vh - 200px );
+  transform: translateX(-98vw) rotateZ(90deg);
+
 }
 //  *********************
 // *                     *
@@ -430,6 +433,9 @@
     margin-left: 5px;
     font-size: 24px;
   }
+  .social li{
+    margin: 0 10px;
+  }
   .marge-1, .marge-2, .marge-3, .marge-4{
     width: 90%;
   }
@@ -456,10 +462,12 @@
   }
   .display-box{
     flex-flow: column nowrap;
+    padding: 0 40px;
+    margin-left: 30px;
   }
   .selfie{
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
   }
   .vertical-line{
     border: none;
@@ -478,11 +486,12 @@
   }
   .col1{
     width: 100%;
+    height: 90vh;
   }
   .col2{
     width: 100%;
-    padding: 0;
-    padding-top: 40px;
+    height: 90vh;
+    padding: 40px 0;
   }
   #realisations{
     height: 300vh;
@@ -490,6 +499,7 @@
   .three-xp{
     flex-flow: column nowrap;
     height: 300vh;
+    padding-left: 50px;
   }
   .xp{
     width: 90%;
@@ -505,6 +515,7 @@
   .colA, .colB{
     width: 100%;
     height: 90vh;
+    padding-left: 50px;
   }
   #footer{
     width: 100%;
@@ -515,7 +526,76 @@
     align-items: center;
   }
   .colA>div{
-    font-size: 24px;
+    font-size: 22px;
   }
+  .my-left{
+    margin-left: 0;
+  }
+  .re-top{
+    margin-top: -10px;
+  }
+  #new_message{
+    padding-left: 30px;
+  }
+  #message_email, #message_title, #message_content{
+    width: 100%;
+  }
+  .marge-section{
+    position: sticky;
+    top: 10px;
+    bottom: -90px;
+    transform-origin: 0% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: $contrast;
+    transform: rotateZ(90deg);
+    z-index: 2;
+    white-space: nowrap;
+  }
+  #glissiere1{
+    position: absolute;
+    transform-origin: 0% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: $contrast;
+    z-index: 2;
+    width: 10vh;
+    height: 50vh;
+    top: 5vh;
+  }
+  // 
   
+  #glissiere2{
+    position: absolute;
+    transform-origin: 0% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: $contrast;
+    z-index: 2;
+    width: 10vh;
+    height: 130vh;
+    top: 99vh;
+  }
+  #glissiere3{
+    position: absolute;
+    transform-origin: 0% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: $contrast;
+    z-index: 2;
+    width: 10vh;
+    height: 235vh;
+    top: 278vh;
+  }
+  #glissiere4{
+    position: absolute;
+    transform-origin: 0% 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    color: $contrast;
+    z-index: 2;
+    width: 10vh;
+    height: 120vh;
+    top: 578vh;
+  }
 }
