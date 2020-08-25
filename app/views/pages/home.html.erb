@@ -36,7 +36,9 @@
       <p class="white-text marge-3"><b>Back-end</b>: Ruby on rails</p>
       <p class="white-text marge-4"><b>Database</b>: PostgreSQL</p>
     </div>
-    <h3 class="marge-section section-1">Accueil</h3>
+    <div id="glissiere1">
+      <h3 class="marge-section section-1" id="first-title">Accueil</h3>
+    </div>
   </div>
   <div class="encard" id="about">
     <div class="display-box">
@@ -103,14 +105,16 @@
         <button class="my-btn cta", id="see-more">En savoir plus</button>
       </div>
     </div>
-    <h3 class="marge-section section-2">A propos</h3>
+    <div id="glissiere2">
+      <h3 class="marge-section section-2">A propos</h3>
+    </div>
   </div>
   <div class="encard" id="realisations">
     <div class="three-xp">
       <div class="xp" id="documentation">
         <div class="gradient">
           <h3>Documentation</h3>
-          <p class="my-justify">Ce site est une de mes premières réalisations, son design et ses fonctionnalités ne sont pas dingues (Il s’agit surtout de mise en forme de documentation, accès sur l’animation CSS et le responsive), mais je l’ai tout de même sélectionné car pour moi il représente le moment où j’ai compris que grâce au code, on peut réaliser tout ce que l’on imagine !</p>
+          <p class="my-justify">Ce site est une de mes premières réalisations, avec un design simple et peu de fonctionnalités, il s’agit surtout de mise en forme, animation CSS et responsive. Mais je l’ai tout de même sélectionné car il représente pour moi le moment où j’ai compris que grâce au code, on peut réaliser tout ce que l’on imagine !</p>
           <%= link_to "www.harduino.club", "http://www.harduino.club", class: "cta site" %>
         </div>
       </div>
@@ -124,12 +128,14 @@
       <div class="xp" id="ocenatcreations">
         <div class="gradient">
           <h3>OceNatCreations</h3>
-          <p class="my-justify">Premier client en tant que Freelance, j'ai adoré créer ce site, concrétiser les souhaits du client, apporter une dimension international à cette petite entreprise naissante. Régler les différentes contraintes techniques qui se présentées. Et même apporter ma contribution au souhait d’écologie du client pour son entreprise, en lui proposant de regrouper les impressions étiquettes de colis afin de diminuer le nombre de feuilles utilisées.</p>
-          <%= link_to "www.ocenatcreations.com", "http://www.ocenatcreations.com", class: "cta site" %>
+          <p class="my-justify">Premier client en tant que Freelance, c'est concrétiser les souhaits du client, apporter une dimension international à cette petite entreprise naissante. Régler les différentes contraintes techniques qui se présentés. Et même apporter ma contribution au souhait d’écologie du client pour son entreprise, en lui proposant de regrouper les impressions étiquettes de colis afin de diminuer le nombre de feuilles utilisées.</p>
+          <%= link_to "www.ocenatcreations.com", "http://www.ocenatcreations.com", class: "cta site re-top" %>
         </div>
       </div>
     </div>
-    <h3 class="marge-section section-3">Réalisations</h3>
+    <div id="glissiere3">
+      <h3 class="marge-section section-3">Réalisations</h3>
+    </div>   
   </div>
   <div class="encard" id="contact">
     <div class="colA">
@@ -145,8 +151,10 @@
         <%= f.submit "Envoyer", class: "cta send" %>
       <% end %>
     </div>
+    <div id="glissiere4">
+      <h3 class="marge-section section-4">Contact</h3>
+    </div>
   </div>
-  <h3 class="marge-section section-4">Contact</h3>
   <footer class="headband" id="footer">
     <p class="my-left">Yohann BERNARD, Aout 2020</p>
     <ul class="social my-right">
